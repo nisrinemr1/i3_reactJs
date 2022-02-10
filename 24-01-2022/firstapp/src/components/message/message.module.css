@@ -1,0 +1,13 @@
+.author{
+    font-weight: bold;
+    margin-top : 10px;
+}
+
+.element > p {
+    margin: 0; 
+}
+
+.content-message {
+    font-style : italic;
+    color:gainsboro;
+}

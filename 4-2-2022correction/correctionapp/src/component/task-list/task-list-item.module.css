@@ -1,0 +1,42 @@
+.task {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    min-height: 60px;
+    }
+    .taskInfo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    }
+    .taskAction {
+    display: flex;
+    flex-direction: column;
+    }
+    .isDone {
+        color: black;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        background: repeating-linear-gradient(125deg, rgb(135, 135, 235), rgb(135, 135, 235) 25px, 
+        rgb(210, 161, 231) 25px, rgb(210, 161, 231) 50px, 
+        rgb(245, 150, 150) 50px, rgb(245, 150, 150) 75px, 
+        rgb(243, 183, 130) 75px, rgb(243, 183, 130) 100px, 
+        rgb(240, 240, 150) 100px, rgb(240, 240, 150) 125px, 
+        rgb(141, 255, 141) 125px, #0f0 150px);
+        height: 100%;
+    
+        background-size: 200% 200%;
+        animation: barberpole 10s linear infinite;
+    }
+    @keyframes barberpole {
+        100% {
+            background-position: 100% 100%;
+        }
+    }
+
+    .urgent {
+    color: crimson;
+    }
+    .isDone .urgent {
+    color: rgb(255, 91, 91);
+    }

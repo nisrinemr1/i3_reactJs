@@ -1,0 +1,33 @@
+*{
+    background-color: palevioletred;
+}
+
+.myForm{
+    box-shadow: 3px 4px 8px 3px #64bea5;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding: 10% 0%;
+    background-color: #64bea5;
+}
+
+.myForm form{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    background-color: #64bea5;
+}
+
+.nb1, .nb2, .result{
+    width: 35%;
+}
+
+form div{
+    background-color: #64bea5;
+}
+
+form label, input, optgroup, span{
+    background-color: #64bea5;
+    border-radius: 5px;
+}

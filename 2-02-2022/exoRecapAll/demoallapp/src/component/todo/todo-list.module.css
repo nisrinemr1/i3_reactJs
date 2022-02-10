@@ -1,0 +1,60 @@
+/* Hex code: #e75874, #be1558, #fbcbc9 and #322514 */
+
+body {
+    background-color: #1868ae;
+    color: #eedec0;
+}
+
+.myTodoList{
+    border: 3px solid #d9a5b3;
+    border-radius: 15px;
+    margin: 5% 20%;
+    padding: 5% 5%;
+    text-align: start;
+}
+
+.myTodoList h2{
+    text-align: center;
+}
+
+
+
+.myList{
+    border: 3px solid #d9a5b3;
+    border-radius: 15px;
+    margin: 5% 20%;
+    padding: 5% 5%;
+    text-align: start;
+}
+
+.myList h2 {
+    text-align: center;
+}
+
+.taskDone{
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: repeating-linear-gradient(125deg, 
+    #1868ae, #1868ae 25px,
+    rgb(135, 135, 235) 25px, rgb(135, 135, 235) 50px, 
+    #1868ae 50px, #1868ae 75px, 
+    rgb(210, 161, 231) 75px, rgb(210, 161, 231) 100px,
+    #1868ae 100px, #1868ae 125px, 
+    rgb(245, 150, 150) 125px, rgb(245, 150, 150) 150px, 
+    #1868ae 150px, #1868ae 175px, 
+    rgb(243, 183, 130) 175px, rgb(243, 183, 130) 200px, 
+    #1868ae 200px, #1868ae 225px, 
+    rgb(240, 240, 150) 225px, rgb(240, 240, 150) 250px,
+    #1868ae 250px, #1868ae 275px, 
+    rgb(141, 255, 141) 275px, rgb(141, 255, 141) 300px);
+    height: 100%;
+
+    background-size: 200% 200%;
+    animation: barberpole 10s linear infinite;
+}
+@keyframes barberpole {
+    100% {
+        background-position: 100% 100%;
+    }
+}

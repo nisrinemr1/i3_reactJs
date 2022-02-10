@@ -1,0 +1,4 @@
+1. après installer react avec la commande npm init react-app nomfichier, on créer un fichier component dans lequel on va y mettre un dossier pour les produits cosmetique naturelle. 
+ps: j'ai copier le component qu'on avait fais en class pour reprendre les commentaires.
+
+2. Création d'un dossier produits-list et dedans un fichier produits-list 

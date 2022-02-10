@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(221, 192, 177);
+}
+
+.myForm label{
+    font-weight: bold;
+    color: saddlebrown;
+}
+
+.myForm input{
+    border-radius: 8px;
+}
+
+.myForm label:first-child::after{
+    content: ':';
+    margin-left: 1ch;
+    margin-right: 2ch;
+}
+
+.myForm textarea{
+    resize: none;
+}
+
+.btn{
+    border-radius: 5px;
+    color: silver;
+    border: chocolate;
+}

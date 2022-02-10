@@ -1,0 +1,17 @@
+.allBooks{
+    display:grid; 
+    grid-template-columns: 20% 20% 20%;
+    column-gap: 10%;
+    justify-content: center;
+}
+
+.allBooks img{
+    width: 100%;
+}
+
+/* balise picture
+<picture>
+    <source srcset={della2} media="(min-width: 800px)" />
+    <img src={della1} alt="" className={style.logo} />
+ </picture>
+*/

@@ -1,0 +1,15 @@
+.lastname{
+    text-transform: uppercase;
+}
+
+.colorWoman{
+    color: palevioletred;
+}
+
+.colorMan{
+    color: burlywood;
+}
+
+.colorOther{
+    color: gainsboro;
+}

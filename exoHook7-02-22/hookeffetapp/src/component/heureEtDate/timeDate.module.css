@@ -1,0 +1,12 @@
+.rainbowtext{ 
+    background: repeating-linear-gradient(125deg, 
+    rgb(141, 255, 141), rgb(141, 255, 141) 25px, 
+    rgb(135, 135, 235) 25px, rgb(135, 135, 235) 50px, 
+    rgb(210, 161, 231) 75px, rgb(210, 161, 231) 100px,
+    rgb(245, 150, 150) 125px, rgb(245, 150, 150) 150px, 
+    rgb(243, 183, 130) 175px, rgb(243, 183, 130) 200px, 
+    rgb(240, 240, 150) 225px, rgb(240, 240, 150) 250px,
+    rgb(141, 255, 141) 275px, rgb(141, 255, 141) 300px);
+    background-clip: text; 
+    color: transparent; 
+}

@@ -1,0 +1,17 @@
+1. après installer react avec la commande npm init react-app nomfichier, on créer un fichier component dans lequel on va y mettre un dossier pour les produits cosmetique naturelle. 
+ps: j'ai copier le component qu'on avait fais en class pour reprendre les commentaires.
+
+2. Création d'un dossier produits-list et dedans un fichier produits-list 
+ps: On a pas à utiliser des props pour les tableau //TODO:Demander pq pas de props tableau a Aurélien
+
+3. Création d'une constante dans le fichier produits-liste.jsx puis l'importer dans l'app.jsx
+
+4. Création du tableau dans app.js après le return. Pas dans la div! 
+
+5.Dans Produit on créer l'attribut stock qu'on va pouvoir utuliser dans notre produit-liste.jsx 
+
+6. Affichage pour un produits
+
+7.installer le prop types npm install prop-types
+
+8.definir les propriétées des types des diff valeurs du tableau (donc nom : string, prix: number , promo : boolean)
