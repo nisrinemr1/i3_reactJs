@@ -1,0 +1,36 @@
+Reac : 
+    - Générer des interfaces web
+    - Application web SPA (Single Page Application)
+        • Pas de reload (client)
+        • Systeme de routing (react-router)
+    - Développer sous forme de composants 
+        • Simple à manipuler 
+        • Ré-utilisation
+        • Découpe de l'app en composants.
+
+Git: Permet de pouvoir de garder un historique de nos code. 
+
+
+
+Dépendence pour le rappel
+**************************
+
+
+• prop-types 
+Ajout d'un typage sur les "props" composants (pour le dev). Les prop-types et les props ne sont pas pareil!
+
+• nanoid 
+Generateur d'id (url friendly)
+
+• classnames 
+Permet de générer facilement des classsnames en JS
+ -> Integration simple dans les JSX
+ -> Permet l'ajout de condition 
+
+• moment
+Permet de manipuler des dates en JS (sans pleurer)
+
+
+Commande
+********
+npm install prop-types nanoid classnames moment

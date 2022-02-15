@@ -3,7 +3,7 @@ import DisplayPrice from '../display-price/display-price';
 import style from './produit.module.css'
 
 const ListeCosmetique = (props) => { /* pas meilleure nom :D */
-    const { nom, prix, promo } = props;
+    const { nom, price, promo } = props;
 
     return (
         <tr>
@@ -13,7 +13,7 @@ const ListeCosmetique = (props) => { /* pas meilleure nom :D */
             ) : (<>
                 <td><DisplayPrice value={price} /></td>
                 <td className={style.promo}>{(promo === true) ? 'promo' : ' '}</td>
-            </>)};
+            </>)}
         </tr>
     );
 };

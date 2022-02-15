@@ -1,5 +1,11 @@
 * {
   text-align: center;
-  background-color:rgba(226, 191, 217, 0.74);
+  background-color:rgba(241, 189, 228, 0.74);
 }
 
+body{
+  overflow-x: hidden;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

@@ -4,13 +4,13 @@ import './App.css';
 
 function App() {
   const produits =[
-    {id : nanoid(), nom : "Shampoing solide neutre", prix: 5, promo: true },
-    {id : nanoid(), nom : "Shampoing solide monoï", prix: 7, promo: false },
-    {id : nanoid(), nom : "Shampoing solide fleurs", prix: 10, promo: false },
-    {id : nanoid(), nom : "Baume à lèvres framboise", prix: 4, promo: true },
-    {id : nanoid(), nom : "Mascara", prix: 4, promo: true},
-    {id : nanoid(), nom : "Blush", prix: 12, promo: false },
-    {id : nanoid(), nom : "Khol", prix: 7, promo: false }
+    {id : nanoid(), nom : "Shampoing solide neutre", price: 5, promo: true },
+    {id : nanoid(), nom : "Shampoing solide monoï", price: 7, promo: false },
+    {id : nanoid(), nom : "Shampoing solide fleurs", price: 10, promo: false },
+    {id : nanoid(), nom : "Baume à lèvres framboise", price: 4, promo: true },
+    {id : nanoid(), nom : "Mascara", price: 4, promo: true},
+    {id : nanoid(), nom : "Blush", price: 12, promo: false },
+    {id : nanoid(), nom : "Khol", price: 7, promo: false }
   ];
 
   console.log(produits);

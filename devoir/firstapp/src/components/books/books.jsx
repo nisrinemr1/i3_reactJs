@@ -2,10 +2,10 @@ import style from './books.module.css';
 import PropTypes from 'prop-types';
 
 import first from './images/first.jpg';
-import third from './images/third.jpg';
-import forth from './images/forth.JPG';
-import fifth from './images/fifth.png';
-import sixth from './images/sixth.jpg';
+import second from './images/third.jpg';
+import third from './images/forth.JPG';
+import fourth from './images/fifth.png';
+import fifth from './images/sixth.jpg';
 //deux méthodes : soit <img src='./first.jpg' alt="first" /> qui est directement dans le dossier public
 //soit l'import et ce sera dans le composant (book > image exemple) 
 
@@ -30,9 +30,9 @@ const BooksPresentation = (props) => {
         <div className={style.allBooks}>
             <BookPresentation image={first} name="나의 눈부신 친구" author="한길사" />
             <BookPresentation image={third} name="우리가 서로에개 산물이 된다면" author="유미 호건지음" />
-            <BookPresentation image={forth}name="연애의기억" author="/" />
-            <BookPresentation image={fifth} name="언젠가 사랑이 말을 걸면" author="/" />
-            <BookPresentation image={sixth} name="말그릇" author="김윤나" />
+            <BookPresentation image={fourth}name="연애의기억" author="/" />
+            <BookPresentation image={second} name="언젠가 사랑이 말을 걸면" author="/" />
+            <BookPresentation image={fifth} name="말그릇" author="김윤나" />
         </div>
     );
 };
