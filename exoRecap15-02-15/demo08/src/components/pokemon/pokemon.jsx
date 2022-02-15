@@ -1,10 +1,8 @@
 
 
-const Pokemon = () =>{
+const Pokemon = ({ name, legendary, habitat, captureRate, flavorText }) => {
 
-    const {name, legendary, habitat, captureRate, flavorText} = props;
-
-    return(
+    return (
         <div>
             <h2> {name} </h2>
             {legendary && (

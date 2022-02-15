@@ -1,11 +1,12 @@
 import { useState } from "react";
 import axios from "axios";
-
+import Pokemon from "../../components/pokemon/pokemon";
+import LoadingScreen from "../../components/loading-screen/loading-screen";
 
 const PokemonSearch = () =>{
     //initialisation des variable d'états pour la requete
     const [isLoading, setLoading] = useState(false);
-    const [onError, setErrorMessage] = useState('');
+    const [errorMessage, setErrorMessage] = useState('');
     const [pokemonData, setPokemonData] = useState(null);
 
 
@@ -40,8 +41,13 @@ const PokemonSearch = () =>{
             <h1>Demo Ajax - Recherche de pokemon</h1>
 
             <button onClick={handleSearchPokemon}>Rechercher un pokemon</button>
-
-            
+            {isLoading ? ( // if isLoading? 
+                <LoadingScreen /> //show up the load screen
+            ) : errorMessage ? ( //else if errror message
+                <h2>{errorMessage}</h2> // shows up an error message
+            ) : pokemonData !== null && ( //ternaire pokemonData is different than null
+                <Pokemon {...pokemonData} /> // TODO! ???? A DEMANDER! 
+            )}
         </main>
     )
 };
