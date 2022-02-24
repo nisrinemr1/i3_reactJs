@@ -47,4 +47,3 @@ npm audit pour voir toutes les failles!!!
         - useDispatch => Permet d'envoyer des actions au dispatcher de redux
 
     Note: Il est possible d'utiliser "l'ancienne technique" via le HOC "Connect" composant du premier ordre. Principe de wrapper. 
-

@@ -1,0 +1,8 @@
+ • Initialiser le projet
+npm init react-app demo-store-02-ajax
+
+ • Les packages prevus initialement (Redux)
+npm install redux react-redux prop-types axios nanoid
+
+ • Pour faire facilement un formulaire
+npm install react-hook-form
