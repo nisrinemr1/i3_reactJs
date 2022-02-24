@@ -32,3 +32,16 @@ const initialProductState = {
 };
 
 //on export le reducer
+export const productReducer = (state = initialProductState, action) =>{
+
+    switch(action.type){
+
+        case PRODUCT_SELECTION: 
+            return{
+                ...state,
+                selectedProduct: state.products.find(p => p.id === action.payload)
+            };
+        default: 
+            return state;
+    };
+};

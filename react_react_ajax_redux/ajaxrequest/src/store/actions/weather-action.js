@@ -2,7 +2,7 @@ import axios from "axios";
 import axions from "axios";
 
 // Les types d'actions possible (Gérer par le reducer)
-export const WEATHER_SEARCH = 'weather/search';
+// export const WEATHER_SEARCH = 'weather/search'; On aura plus besoin parce que c'est une méthode complex qui fait les autres trucs!. Elle ne sert à rien!!! 
 export const WEATHER_LOADING = 'weather/loading';
 export const WEATHER_RESULT = 'weather/result';
 export const WEATHER_ERROR = 'weather/error';
@@ -31,20 +31,6 @@ export const resultWeather = (result) =>({
     }
 });
 
-export const productReducer = (state = initialProductState, action) =>{
-
-    switch(action.type){
-
-        case PRODUCT_SELECTION: 
-            return{
-                ...state,
-                selectedProduct: state.products.find(p => p.id === action.payload)
-            };
-        default: 
-            return state;
-    };
-};
-
 // Méthode pour rechercher la météo via axios (et necessite Redux-thunk) //si city n'est pas correct ça ne sert à rien 
 export const searchWeather = (city) => {
 
@@ -61,9 +47,11 @@ export const searchWeather = (city) => {
             return;
         }
         
-        //requête ajax avec axios
+        //Déclancher l'action 'LOADING'
+        dispatch(loadingWeather());
+
+        //requête ajax 
         axios.get('http://api.openweathermap.org/data/2.5/weather', {
-            //différent paramètre de notre api
             //https://axios-http.com/docs/req_config la doc!!!!!
             // on coupe cet url http://api.openweathermap.org/data/2.5/weather?q=Bruxelles&appid=c3fa448b20d4333b499f552522c429d3&units=metric&lang=fr. Axios va tout concaténé sans qu'on se prenne la tête à concaténé!!!!!! 
             //http://api.openweathermap.org/data/2.5/weather
@@ -71,12 +59,23 @@ export const searchWeather = (city) => {
             // &appid=c3fa448b20d4333b499f552522c429d3
             // &units=metric
             // &lang=fr
+            //différent paramètre de notre api
             params: {
                 q: city,
                 appid: 'c3fa448b20d4333b499f552522c429d3',
                 units: 'metric',
                 lang: 'fr'
             }
+        }).then(response =>{
+            //déclancher l'action result avec le dispatch
+            dispatch(resultWeather(response.data));
+        }).catch(error => {
+            //customiser le message! On test, si c'est 404 on met ville non trouvé, sinon requete échoué!
+            const errorMessage =(error.response.status === 404) ?
+                                    'Ville non trouvé': 'Requete échoué :(';
+
+            //Declancher l'action 'error'
+            dispatch(errorMessage(errorMessage))
         })
 
     }

@@ -1,11 +1,14 @@
-//importation des reducers qu'on à générer
-import { productReducer } from "./reducers/product-reducer";
 import { applyMiddleware, combineReducers, createStore } from "redux";
 import reduxThunk from 'redux-thunk';
 
+//importation des reducers qu'on à générer
+import { productReducer } from "./reducers/product-reducer";
+import { weatherReducer } from "./reducers/weather-reducer";
+
 //on crée une "grosse" variable pour réunier les différents reducers
 const reducer = combineReducers({
-    productCategory: productReducer
+    productCategory: productReducer,
+    weahterCategory: weatherReducer
 });
 
 //export default createStore(reducer, applyMiddleware(reduxThunk)); autre manière
