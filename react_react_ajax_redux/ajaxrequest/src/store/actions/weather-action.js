@@ -71,11 +71,11 @@ export const searchWeather = (city) => {
             dispatch(resultWeather(response.data));
         }).catch(error => {
             //customiser le message! On test, si c'est 404 on met ville non trouvé, sinon requete échoué!
-            const errorMessage =(error.response.status === 404) ?
+            const message =(error.response && error.response.status === 404) ?
                                     'Ville non trouvé': 'Requete échoué :(';
 
             //Declancher l'action 'error'
-            dispatch(errorMessage(errorMessage))
+            dispatch(errorWeather(message));
         })
 
     }
