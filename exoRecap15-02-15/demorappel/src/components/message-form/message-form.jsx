@@ -2,18 +2,17 @@ import { useState } from "react";
 import PropTypes from 'prop-types';
 
 const MessageForm = (props) => {
-
-    const [msgInput, setMsgInput] = useState('');
+const [msgInput, setMsgInput] = useState('');
 
     //méthode de réaction au submit du formulaire
-    const handleSubmit = (e) => {
+ const handleSubmit = (e) => {
         e.preventDefault();//empêche le refraîche de la page. 
 
         props.onSendMsg(msgInput); //communication montante du contenu du msgInput
         setMsgInput(''); // pour vider le setMsgInput
-    }
+ }
 
-    return(
+return(
         <form onSubmit={handleSubmit}> {/* permet à l'utilisateur d'utiliser le btn enter! */}
             <input type="text" 
                 onChange={(e) => setMsgInput(e.target.value)}/* relier le text et l'état dans msgInput */
